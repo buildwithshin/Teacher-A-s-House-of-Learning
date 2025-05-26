@@ -382,7 +382,7 @@
 
 .section-title {
   font-family: 'Sniglet', cursive !important;
-  font-weight: 600 !important;
+  font-weight: 600
   font-size: 1rem;
   margin: 0;
   position: relative;
@@ -622,7 +622,10 @@
     font-size: 25px !important;
   }
   .card-back > p {
-    font-size: 25px !important;
+    font-size: 20px !important;
+  }
+  .section-title {
+    font-size: 50px !important;
   }
 }
 
@@ -666,7 +669,7 @@
 }
 
 .left-panel {
-  background-color: #FF6363;
+  background-color: #36C2CE;
 }
 
 .left-panel h2 {
@@ -683,7 +686,7 @@
 }
 
 .right-panel {
-  background-color: #FF8282;
+  background-color: #478CCF;
 }
 
 .right-panel h2 {
@@ -708,7 +711,9 @@
 
 /* Responsive button */
 .contact-btn {
-  background-color: #36AE7C;
+  font-family: Balsamiq;
+  background-color: #36C2CE;
+  text-decoration: none;
   border: none;
   color: white;
   padding: 15px 2rem;
@@ -716,7 +721,7 @@
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
   width: 100%;
   max-width: 350px;
   box-sizing: border-box;
@@ -724,9 +729,10 @@
 
 .contact-btn:hover,
 .contact-btn:focus-visible {
-  background-color: #F9D923;
+  transform: scale(1.03); /* Only pop effect */
   outline: none;
-  box-shadow: 0 0 0 3px #ffd54f;
+  box-shadow: none;       /* Remove highlight */
+  background-color: #478CCF; /* Keep original color */
 }
 
 /* Responsive for smaller devices */
@@ -786,7 +792,8 @@
 
 .section-description {
   font-size: 1.1rem;
-  color: #555;
+  font-family: Balsamiq;
+  color: #000000;
   margin-bottom: 40px;
 }
 
@@ -826,14 +833,16 @@
 }
 
 .staff-member-name {
+  font-family: Sniglet;
   font-size: 1.2rem;
-  color: #333;
+  color: #187498;
   margin-bottom: 5px;
 }
 
 .staff-member-title {
+  font-family: Balsamiq;
   font-size: 0.9rem;
-  color: #666;
+  color: #222222;
 }
 
 
@@ -924,10 +933,10 @@
   margin-bottom: 20px;
 }
 
-.help-card-text {
+.careers-card-text {
   font-family: 'Balsamiq Sans', cursive;
   font-size: 1.1rem;
-  color: #555;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 25px;
 }
@@ -1033,13 +1042,22 @@
 
 
 .footer {
-  background-color: #ffd3b6; /* peach color */
+  background-color: #FFF7D4;
   color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
   flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.footer1 {
+  font-family: Balsamiq;
+  color: #A4907C !important; 
+  margin: 0;
+  font-size: 5px;
+  color: #000;
+  text-decoration: none;
 }
 
 .footer .info {
@@ -1057,7 +1075,8 @@
 }
 
 .footer .section h3 {
-  color: #d18a00; /* dark gold-ish */
+  font-family: Sniglet;
+  color: #187498; 
   margin: 0 0 8px 0;
   font-weight: bold;
   font-size: 16px;
@@ -1065,6 +1084,8 @@
 
 .footer .section a,
 .footer .section p {
+  font-family: Balsamiq;
+  color: #000000; 
   margin: 0;
   font-size: 14px;
   color: #000;
@@ -1072,11 +1093,6 @@
 }
 
 .footer .section a:hover {
-  text-decoration: underline;
-}
-
-.footer .section a.phone {
-  font-weight: bold;
   text-decoration: underline;
 }
 
