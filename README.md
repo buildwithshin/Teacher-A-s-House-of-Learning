@@ -4,7 +4,7 @@ A fully responsive, multi-section landing page for **Teacher A’s House of Lear
 
 ## 🔗 Live Preview
 
-> Coming soon — deploy via GitHub Pages, Vercel, or Netlify for public access.
+> Coming soon — deploy via GitHub Pages, Vercel, or Netlify for public access. (Currently under development)
 
 ---
 
@@ -19,7 +19,6 @@ A fully responsive, multi-section landing page for **Teacher A’s House of Lear
 │ ├── card-1.png
 │ └── ...etc
 └── README.md # Project overview
-
 
 
 ---
