@@ -20,8 +20,9 @@
 /*Landing Page Styling*/
 
 #place {
-  font-family: Balsamiq;
+  font-family: Sniglet;
   color: #187498;
+  font-weight: 600;
 }
 
 #explore {
@@ -93,14 +94,14 @@
 
 
 .h2-story {
-  font-family: Balsamiq;
-  font-weight: 500;
-  color: #EB5353;
+  font-family: Sniglet;
+  font-weight: 600;
+  color: #F9D923;
   text-align: center;
 }
 
 .text-para {
-  font-family: Sniglet;
+  font-family: Balsamiq;
   font-weight: 200;
   color: #000000 !important;
   text-align: center;
@@ -109,7 +110,7 @@
 .about-section {
   padding: 60px 20px;
   background-color: #ffffff;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Balsamiq', sans-serif;
 }
 
 .about-container {
@@ -185,8 +186,9 @@
 .team-section h1 {
   font-size: 2.5rem;
   font-family: 'Sniglet', cursive;
+  font-weight: 600;
   margin-bottom: 50px;
-  color: #4dacc4;
+  color: #187498;
 }
 
 .profiles {
@@ -220,15 +222,17 @@
 }
 
 .profile-card h2 {
-  color: #0d47a1;
+  color: #EB5353;
   margin-bottom: 20px;
   font-size: 1.4rem;
+  font-family: Sniglet;
 }
 
 .profile-card p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #000000;
+  font-family: Balsamiq;
 }
 
 /* Responsive */
@@ -377,9 +381,9 @@
 }
 
 .section-title {
-  font-family: 'Balsamiq', cursive;
-  font-weight: 800;
-  font-size: 2rem;
+  font-family: 'Sniglet', cursive !important;
+  font-weight: 600 !important;
+  font-size: 1rem;
   margin: 0;
   position: relative;
   color: #EB5353;
@@ -646,7 +650,7 @@
   flex: 1 1 0;
   padding: 2.5rem 2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -656,19 +660,43 @@
   box-sizing: border-box;
 }
 
+.panel:hover,
+.panel:focus-visible {
+  transform: scale(1.03); /* Simple pop effect on hover */
+}
+
 .left-panel {
-  background-color: #3a9bdc;
+  background-color: #FF6363;
+}
+
+.left-panel h2 {
+  font-family: Sniglet;
+  color: #F5EEDD;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.left-panel p {
+  font-family: Balsamiq;
+  color: #F5EEDD !important;
+  font-size: 15px;
 }
 
 .right-panel {
-  background-color: #1462a6;
+  background-color: #FF8282;
 }
 
-.panel:hover,
-.panel:focus-visible {
-  filter: brightness(1.15);
-  outline: none;
-  box-shadow: 0 0 0 3px #ffd54f;
+.right-panel h2 {
+  font-family: Sniglet;
+  color: #F5EEDD;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.right-panel p {
+  font-family: Balsamiq;
+  color: #F5EEDD !important;
+  font-size: 15px;
 }
 
 .button-container {
@@ -680,23 +708,23 @@
 
 /* Responsive button */
 .contact-btn {
-  background-color: #1462a6;
+  background-color: #36AE7C;
   border: none;
   color: white;
-  padding: 15px 2rem; /* padding left/right = 2rem for nice sizing */
+  padding: 15px 2rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%; /* full width within container */
-  max-width: 350px; /* max width on large screens */
+  width: 100%;
+  max-width: 350px;
   box-sizing: border-box;
 }
 
 .contact-btn:hover,
 .contact-btn:focus-visible {
-  background-color: #0f4a7a;
+  background-color: #F9D923;
   outline: none;
   box-shadow: 0 0 0 3px #ffd54f;
 }
@@ -708,19 +736,18 @@
     width: 95vw;
     min-height: auto;
   }
-  
+
   .panel {
     padding: 1.5rem 1rem;
     min-width: 100%;
   }
-  
+
   .button-container {
     width: 95vw;
     margin-top: 1.5rem;
     max-width: none;
   }
 
-  /* Button full width and no max limit on small devices */
   .contact-btn {
     max-width: none;
   }
@@ -732,6 +759,7 @@
     width: 75vw;
   }
 }
+
 
 
 /***********************************************************************************/
@@ -960,15 +988,13 @@
   text-align: center;
 }
 
-.awards-section h2 {
-  margin-bottom: 12px;
-}
 
 .awards-section p {
+  font-family: Balsamiq;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   margin-bottom: 40px;
-  color: #555;
+  color: #000000;
   line-height: 1.5;
 }
 
@@ -993,9 +1019,10 @@
 }
 
 .award-caption {
-  font-size: 12px;
+  font-family: Balsamiq;
+  font-size: 13px;
   font-weight: 400;
-  color: #444;
+  color: #000000;
   line-height: 1.3;
 }
 
