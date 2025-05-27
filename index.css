@@ -990,6 +990,125 @@
 
 
 /***********************************************************************************/
+
+/* Branches Location Styling */
+
+
+.branches-grid-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.branch-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.branch-container h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+/* Carousel styles */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffffcc;
+  border: none;
+  font-size: 24px;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-btn.prev {
+  left: 5px;
+}
+
+.carousel-btn.next {
+  right: 5px;
+}
+
+.map-container {
+  margin: 15px 0;
+}
+
+.location-desc {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .carousel {
+    height: 120px;
+  }
+
+  .carousel-image {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .branch-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .location-desc {
+    font-size: 0.95rem;
+  }
+}
+
+
+/***********************************************************************************/
 /*Awards Styling*/
 
 .awards-section {
