@@ -1038,7 +1038,7 @@
 
 .branches-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -1111,6 +1111,27 @@
   text-align: center;
 }
 
+.branches-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Tablet: show 1 column still */
+@media (min-width: 768px) {
+  .branches-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Desktop: show 2 columns */
+@media (min-width: 992px) {
+  .branches-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Title resizing */
 @media (max-width: 1024px) {
   .title {
     font-size: 1.75rem;
@@ -1131,6 +1152,7 @@
   }
 }
 
+/* Small phones */
 @media (max-width: 480px) {
   .branch-container h2 {
     font-size: 1.1rem;
@@ -1141,6 +1163,7 @@
   }
 }
 
+/* Map styling */
 .map-wrapper {
   overflow: hidden;
   border-radius: 8px;
@@ -1151,6 +1174,9 @@
   transform: scale(1.03);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
+
+
+
 
 
 /***********************************************************************************/
@@ -1302,13 +1328,14 @@
 
 /* JS Styling */
 
+/* Initial state before animation */
 .animate-hidden {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Visible state when scrolled into view */
+/* Final state when in viewport */
 .animate-visible {
   opacity: 1;
   transform: translateY(0);
