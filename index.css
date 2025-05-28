@@ -16,9 +16,6 @@
 }
 
 
-
-
-
 /***********************************************************************************/
 
 /*Navigation Bar Styling*/
@@ -63,12 +60,12 @@
 
 .landing-page {
   height: 100vh;
-  background-image: url('./images/about.png'); /* Change this to your image path */
+  background-image: url('./images/about-1.png');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
   padding: 0 5vw;
 }
 
@@ -79,7 +76,7 @@
     135deg,
     rgba(255, 255, 255, 0.95) 0%,
     rgba(255, 255, 255, 0.85) 50%,
-    rgba(255, 255, 255, 0.9) 75%,
+    rgba(255, 255, 255, 0.7) 75%,
     rgba(255, 255, 255, 0.8) 100%
     );
   padding: 3rem 4rem; 
@@ -123,21 +120,6 @@
 
 /*About Us Styling*/
 
-
-.h2-story {
-  font-family: Sniglet;
-  font-weight: 600;
-  color: #F9D923;
-  text-align: center;
-}
-
-.text-para {
-  font-family: Balsamiq;
-  font-weight: 200;
-  color: #000000 !important;
-  text-align: center;
-}
-
 .about-section {
   padding: 60px 20px;
   background-color: #ffffff;
@@ -159,16 +141,20 @@
 }
 
 .about-text h2 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 20px;
   font-weight: 700;
+  font-family: Sniglet, cursive;
+  color: #F9D923;
+  text-align: center;
 }
 
 .about-text p {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.7;
   margin-bottom: 16px;
-  color: #333;
+  color: #000000;
+  text-align: justify;
 }
 
 .about-images {
@@ -215,7 +201,7 @@
 }
 
 .team-section h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-family: 'Sniglet', cursive;
   font-weight: 600;
   margin-bottom: 50px;
@@ -230,7 +216,7 @@
 }
 
 .profile-card {
-  background-color: #fff;
+  background-color: #F2F9FF;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -255,15 +241,17 @@
 .profile-card h2 {
   color: #EB5353;
   margin-bottom: 20px;
-  font-size: 1.4rem;
-  font-family: Sniglet;
+  font-size: 1.8rem;
+  font-family: 'Balsamiq', cursive;
+  font-weight: 600;
 }
 
 .profile-card p {
   font-size: 1rem;
   line-height: 1.6;
   color: #000000;
-  font-family: Balsamiq;
+  font-family: 'Sniglet';;
+  text-align: justify;
 }
 
 /* Responsive */
@@ -287,7 +275,7 @@
   font-family: 'Sniglet', cursive !important;
   font-weight: 800;
   font-size: 3rem;
-  color: #187498;
+  color: #F9D923;
 }
 
 .vision-mission {
@@ -437,6 +425,7 @@
   color: #555;
   margin-top: 15px;
   color: #000000;
+  text-align: justify !important;
 }
 
 .row.three-columns {
@@ -495,7 +484,7 @@
     border-radius: 8px;
     padding: 25px 20px; /* More balanced padding */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Better readability */
+    text-align: center; /* Better readability */
     word-wrap: break-word; /* Prevent overflow */
     line-height: 1.5;
     content: center;
@@ -543,10 +532,10 @@
 /*Services Styling*/
 
 .card-title {
-  font-size: 1rem !important;
+  font-size: 25px !important;
   font-family: Balsamiq, cursive !important;
   color: #187498;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .card-back > p {
@@ -708,10 +697,11 @@
   color: #F5EEDD;
   font-weight: 600;
   font-size: 30px;
+  justify-content: center;
 }
 
 .left-panel p {
-  font-family: Balsamiq;
+  font-family: Sniglet;
   color: #F5EEDD !important;
   font-size: 15px;
 }
@@ -725,10 +715,11 @@
   color: #F5EEDD;
   font-weight: 600;
   font-size: 30px;
+  justify-content: center;
 }
 
 .right-panel p {
-  font-family: Balsamiq;
+  font-family: Sniglet;
   color: #F5EEDD !important;
   font-size: 15px;
 }
@@ -882,7 +873,7 @@
 
 /* Careers Styling */
 
-.help-section {
+.careers-section {
   padding: 80px 0;
   background-image: url('./images/bg.gif');
   background-repeat: no-repeat;
@@ -893,7 +884,7 @@
   color: white; /* Adjust text color for contrast */
 }
 
-.help-section::before {
+.careers-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -903,7 +894,7 @@
   z-index: 0;
 }
 
-.help-section .container {
+.careers-section .container {
   position: relative;
   z-index: 2;
 }
@@ -921,6 +912,7 @@
   font-size: 1.2rem;
   color: #000000;
   line-height: 1.6;
+  text-align: center;
 }
 
 .section-subtitle a {
@@ -929,7 +921,7 @@
 }
 
 
-.help-card {
+.careers-card {
   background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
   border-radius: 10px;
   padding: 40px;
@@ -943,7 +935,7 @@
   color: #555; /* Dark text for readability */
 }
 
-.help-card:hover {
+.careers-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
@@ -952,11 +944,11 @@
   border-top-color: #e74c3c; /* Red accent */
 }
 
-.volunteer-card {
+.careers-qualify-card {
   border-top-color: #2ecc71; /* Green accent */
 }
 
-.help-card-title {
+.careers-card-title {
   font-family: 'Sniglet', cursive;
   font-weight: 700;
   font-size: 1.8rem;
@@ -985,7 +977,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .help-section {
+  .careers-section {
     padding: 50px 0;
   }
   
@@ -997,15 +989,15 @@
     font-size: 1rem;
   }
   
-  .help-card {
+  .careers-card {
     padding: 30px;
   }
   
-  .help-card-title {
+  .careers-card-title {
     font-size: 1.5rem;
   }
   
-  .help-card-text {
+  .careers-card-text {
     font-size: 1rem;
   }
 }
@@ -1016,6 +1008,43 @@
   height: 80px;
   margin: 0 auto 20px;
   display: block;
+}
+
+
+
+/* This styling is for Careers and Key Responsibilities */
+
+
+.key-responsibilities {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 1.1rem;
+  color: #000000; /* Dark text for SEO readability */
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.key-responsibilities li {
+  margin-bottom: 0.75rem;
+}
+
+
+.qualifications-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 1.1rem;
+  color: #000000; /* Ensure good readability for SEO */
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.qualifications-list li {
+  margin-bottom: 0.75rem;
+  text-align: justify;
 }
 
 
@@ -1224,6 +1253,7 @@
   font-weight: 400;
   color: #000000;
   line-height: 1.3;
+  justify-content: center !important;
 }
 
 
@@ -1253,10 +1283,11 @@
 
 .footer .info {
   display: flex;
-  gap: 60px;
-  flex: 1 1 60%;
-  flex-wrap: wrap; /* wrap sections on smaller widths */
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
 }
+
 
 .footer .section {
   display: flex;
