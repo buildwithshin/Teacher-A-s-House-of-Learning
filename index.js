@@ -73,3 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel(); // Initial position
   });
 });
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// [SECTION] For Awards Section
+
+document.querySelectorAll('.award').forEach(award => {
+  award.addEventListener('click', () => {
+    award.classList.toggle('highlight');
+  });
+});
