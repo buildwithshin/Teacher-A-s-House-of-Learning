@@ -22,14 +22,14 @@
 	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 	
 </head>
 <body>
 	
 	
 	<!-- Start of Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#landing">
 				<img src="./images/logo-b.png" class="ms-5">
@@ -41,23 +41,31 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto me-5">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#about">Home</a>
+						<a class="nav-link active" aria-current="page" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="#offer">What we offer</a>
+						<a class="nav-link active" href="#programs">Our Programs</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link active me-2" href="#careers">Careers</a>
 					</li>
 					<li class="nav-item">
-						<a href="https://drive.google.com/your-google-drive-link" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-link px-3">
-							Contact Us
-						</a>
+						<button id="openPopupBtn" class="btn btn-primary nav-link px-3">Contact Us</button>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+	<!-- Popup Form -->
+	<div id="contactPopup" class="popup">
+		<div class="popup-content">
+			<span id="closePopupBtn" class="close">&times;</span>
+			<h4>Contact Information</h4>
+			<p><strong>Email:</strong> teacherashouseoflearning@gmail.com</p>
+			<p><strong>Phone:</strong> +63966 782 0090</p>
+			<p><strong>Socials:</strong> <a href="https://www.facebook.com/TAHLMainOfficeOfficial" target="_blank">Teacher A’s House of Learning-Main Office</a></p>
+		</div>
+	</div>
 	<!-- End of Navbar -->
 	
 	
@@ -74,6 +82,7 @@
 	<!-- End of Landing Page -->
 	
 	<!-- About Us Section -->
+
 	<section class="about-section" id="about">
 		<div class="about-container">
 			<div class="about-text">
@@ -97,6 +106,9 @@
 	<!-- Start of COO -->
 	<div class="team-section">
 		<h1>CEO and COO of Teacher A’s House of Learning</h1>
+		<p class="section-description text-center mx-auto">
+			The CEO and COO of Teacher A’s House of Learning lead with passion and vision, fostering innovation and inclusive education to empower students and drive the organization’s growth and success.
+		</p>
 		<div class="profiles">
 			<div class="profile-card">
 				<img src="./images/core-team/ceo.png" alt="CEO" class="profile-img">
@@ -115,8 +127,7 @@
 	<!-- End of COO -->
 	
 	
-	<!-- Start of Mission and Vision -->
-	<!-- Vision & Mission Section -->
+	<!-- Start of Mission Vision, and Core Values -->  
 	<section class="vision-mission">
 		<div class="container">
 			<div class="row three-columns">
@@ -171,14 +182,14 @@
 							</div>
 							<div class="flip-card-back">
 								<p class="section-content">
-									<strong class="teacher">TEACH: Trust, Empathy, Acceptance, Care, and Honesty</strong> — the core values driving our professional training to help you grow and succeed.
+									<strong class="teacher">TEACH:</strong> <strong class="teacher">T</strong>rust, <strong class="teacher">E</strong>mpathy, <strong class="teacher">A</strong>cceptance, <strong class="teacher">C</strong>are, and <strong class="teacher">H</strong>onesty  as core values guiding our professional training for your growth and success.
 								</p>
 							</div>
 						</div>
 						<div class="mobile-content">
 							<h2 class="core-title">Core Values</h2>
 							<p class="section-content">
-								<strong class="teacher">TEACH: Trust, Empathy, Acceptance, Care, and Honesty</strong> — the core values driving our professional training to help you grow and succeed.
+								<strong class="teacher">TEACH: Trust, Empathy, Acceptance, Care, and Honesty</strong> the core values driving our professional training to help you grow and succeed.
 							</p>
 						</div>
 					</div>
@@ -186,12 +197,15 @@
 			</div>
 		</div>
 	</section>
-	<!-- End of Mission and Vision -->
+	<!-- End of Mission Vision, and Core Values -->  
 	
 	
 	<!-- Start of What we Offer --> 
-	<section class="what-we-offer">
-		<h1 class="text-center mt-5 section-title">Our Services</h1>
+	<section class="what-we-offer" id="programs">
+		<h1 class="text-center mt-5 section-title" id="offers">Our Services</h1>
+		<p class="section-description text-center mx-auto">
+			Teacher A’s provides expert educational programs and professional training to boost student learning, academic success, and personal growth. Our services include quality tutoring, skills development, and tailored learning solutions that build confidence and lifelong achievement.
+		</p>
 		<div class="cards-container">
 			<div class="card card-1" tabindex="0">
 				<div class="card-inner">
@@ -281,7 +295,6 @@
 	<!-- End of What we Offer -->
 	
 	<!-- Start of Other Offer -->
-	
 	<div class="split-container container-fluid">
 		<div class="panel left-panel">
 			<h2>Training and Development</h2>
@@ -298,9 +311,9 @@
 	</div>
 	
 	<div class="button-container">
-		<a href="https://forms.gle/your-google-form-id" target="_blank" class="contact-btn">
+		<button id="openContactPopup" class="contact-btn">
 			Contact Us to Learn More
-		</a>
+		</button>
 	</div>
 	<!-- End of Other Offer -->
 	
@@ -309,7 +322,9 @@
 	<section class="staff-section">
 		<div class="container">
 			<h2 class="section-title-one">Core Team</h2>
-			<p class="section-description">Meet the teachers working hard to provide the best education to those who have the least in life.</p>
+			<p class="section-description">
+				Meet Teacher A’s Core Team, dedicated educators and professionals committed to delivering quality education, fostering student growth, and driving innovation in inclusive learning.
+			</p>
 			<div class="staff-grid">
 				<div class="staff-member">
 					<div class="staff-member-image">
@@ -363,7 +378,7 @@
 				</div>
 				<div class="staff-member">
 					<div class="staff-member-image">
-						<img src="./images/core-team/hr.png" alt="Elizabeth Gomez">
+						<img src="./images/core-team/hr.png" alt="human resource">
 					</div>
 					<h3 class="staff-member-name">Ms. Rheyna Joy B. Torremocha, RPm</h3>
 					<p class="staff-member-title">In House Psychometrician/HR Supervisor</p>
@@ -380,10 +395,10 @@
 	<section class="careers-section" id="careers">
 		<div class="container">
 			<div class="careers-header text-center">
-				<h2 class="section-title-one">Careers – Join Our Teaching Team</h2>
+				<h2 class="section-title-one">Careers</h2>
 				<p class="section-subtitle">
-					<strong>Teacher A’s House of Learning</strong> is hiring passionate and dedicated <strong>Program Facilitators</strong> to join our expanding team. We focus on inclusive education and are committed to making a positive impact on children’s lives. If you’re driven to support diverse learners and help shape a brighter future, join us in our mission to empower all students.<br>
-					Message us at <a href="mailto:teachahl.hrdept@gmail.com">teachahl.hrdept@gmail.com</a>
+					<strong>Teacher A’s House of Learning</strong> is hiring passionate <strong>Program Facilitators</strong> dedicated to inclusive education. Join us to empower children and create a brighter future for all learners.
+					Message us at <a href="mailto:teachahl.hrdept@gmail.com"><strong>teachahl.hrdept@gmail.com</strong></a>
 				</p>
 			</div>
 			
@@ -425,6 +440,9 @@
 	<!-- Starts of Awards Section -->
 	<section class="recognition-section mt-5">
 		<h2 class="section-title">Awards & Recognition</h2>
+		<p class="section-description text-center mx-auto">
+			Teacher A’s dedication to excellence is recognized through quality programs and outstanding student success. Our innovation and community impact set us apart.
+		</p>
 		<div class="recognition-list">
 			<div class="recognition-item mt-2">
 				<img src="./images/awards/award-1.jpg" alt="Recognition 1" />
@@ -448,8 +466,10 @@
 	<!-- Start of Branches -->
 	<div>
 		<section class="branches-section">
-			<h1 class="section-title">Our Branches</h1>
-			
+			<h1 class="section-title" id="branch">Our Branches</h1>
+			<p class="section-description text-center mx-auto">
+				Discover Teacher A’s conveniently located branches, providing accessible, quality education and specialized learning programs tailored to serve communities and support every student’s growth and success.
+			</p>
 			<div class="branch" id="branch1">
 				<button class="branch-title" aria-expanded="false" aria-controls="content-branch1">Teacher A's Training Office Tagapo</button>
 				<div class="branch-content" id="content-branch1" hidden>
@@ -565,8 +585,13 @@
 			</div>
 		</section>
 	</div>
-	
 	<!-- End of Branches -->
+	
+	<!-- Start of Divider between branches and Footer Section -->
+	<div class="section-divider">
+		<img src="./images/divider.png" alt="Decorative Divider" />
+	</div>
+	<!-- End of Divider between branches and Footer Section -->
 	
 	<!-- Start of Footer Section -->
 	<footer class="footer mt-5">

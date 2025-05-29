@@ -70,13 +70,57 @@ document.querySelectorAll('.branch-title').forEach(button => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-// 7. Sticky navbar on scroll
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector("nav.navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
+// [SECTION] For Contact Form Popup
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("contactPopup");
+  
+  // Existing button (if any)
+  const openBtn = document.getElementById("openPopupBtn");
+  if (openBtn) {
+    openBtn.addEventListener("click", () => {
+      popup.style.display = "block";
+    });
   }
+
+  // New button for Contact Us to Learn More
+  const openContactBtn = document.getElementById("openContactPopup");
+  if (openContactBtn) {
+    openContactBtn.addEventListener("click", () => {
+      popup.style.display = "block";
+    });
+  }
+
+  const closeBtn = document.getElementById("closePopupBtn");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  }
+
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
 });
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const popup = document.getElementById("contactPopup");
+//   const openBtn = document.getElementById("openContactPopup");
+//   const closeBtn = document.getElementById("closePopupBtn");
+
+//   openBtn.addEventListener("click", () => {
+//     popup.style.display = "block";
+//   });
+
+//   closeBtn.addEventListener("click", () => {
+//     popup.style.display = "none";
+//   });
+
+//   window.addEventListener("click", (e) => {
+//     if (e.target === popup) {
+//       popup.style.display = "none";
+//     }
+//   });
+// });

@@ -8,6 +8,24 @@
 }
 
 
+#about{
+    scroll-margin-top: 4rem;
+}
+
+#programs{
+    scroll-margin-top: 6rem;
+}
+
+#contact{
+    scroll-margin-top: 5rem;
+
+}
+
+#offers{
+    scroll-margin-top: 5rem;
+
+}
+
 /*Navr bar logo*/
 
 .navbar-brand img {
@@ -21,18 +39,18 @@
 /*Navigation Bar Styling*/
 
 .navbar {
-  font-family: 'Balsamiq';
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 1rem;
 }
 
 .navbar .nav-link {
-  color: #000000 !important;
+  color: #EB5353 !important;
   transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-  color: #EB5353 !important;
+  color: #187498 !important;
 }
 
 .navbar .btn {
@@ -41,6 +59,67 @@
   background-color: #F9D923;
   border: none;
 }
+
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background: #FEF3E2;
+  margin: 10% auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: left;
+}
+
+.popup-content h4 {
+  font-family: 'Sniglet';
+  color: #187498;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.popup-content p {
+  font-family: 'Poppins';
+  color: #000000;
+  font-size: 14px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.contact-btn {
+  padding: 12px 24px;
+  background-color: #F9D923;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e0c829;
+}
+
 
 
 /***********************************************************************************/
@@ -54,7 +133,7 @@
 }
 
 #explore {
-  font-family: Sniglet;
+  font-family: Poppins;
   color: #000000;
 }
 
@@ -105,7 +184,7 @@
   font-weight: 600;
   font-size: 1.1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: Balsamiq;
+  font-family: Poppins;
 }
 
 .content button:hover {
@@ -120,7 +199,7 @@
     padding: 2.5rem 3rem;
   }
   .content h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .content p {
     font-size: 1.1rem;
@@ -137,7 +216,7 @@
     padding: 2rem 1.5rem;
   }
   .content h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .content p {
     font-size: 1rem;
@@ -153,7 +232,7 @@
 
 /***********************************************************************************/
 
-/*About Us Styling*/
+/* About Us Styling */
 
 .about-section {
   padding: 60px 20px;
@@ -190,6 +269,7 @@
   margin-bottom: 16px;
   color: #000000;
   text-align: justify;
+  font-family: Poppins;
 }
 
 .about-images {
@@ -233,6 +313,7 @@
   }
   .about-text p {
     font-size: 17px;
+    font-family: Poppins;
   }
   .about-images {
     grid-template-columns: repeat(2, 1fr);
@@ -256,6 +337,34 @@
   .about-text p {
     font-size: 16px;
     line-height: 1.6;
+    font-family: Poppins;
+  }
+  .about-images {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on mobile */
+    gap: 12px;
+  }
+  .about-images img {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text, 
+  .about-images {
+    min-width: auto;
+    width: 100%;
+  }
+  .about-text h2 {
+    font-size: 2.5rem;
+  }
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Poppins;
   }
   .about-images {
     grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on mobile */
@@ -319,7 +428,7 @@
   color: #EB5353;
   margin-bottom: 20px;
   font-size: 1.8rem;
-  font-family: 'Balsamiq', cursive;
+  font-family: 'Poppins';
   font-weight: 600;
 }
 
@@ -327,7 +436,7 @@
   font-size: 1rem;
   line-height: 1.6;
   color: #000000;
-  font-family: 'Sniglet';;
+  font-family: 'Poppins';
   text-align: justify;
 }
 
@@ -341,11 +450,19 @@
   .profile-card {
     width: 100%;
   }
+  .team-section h1 {
+    font-size: 2.5rem;
+  }
 }
 
 /***********************************************************************************/
 
 /*Mission Vision, and Core values Styling*/
+
+.teacher {
+  text-decoration: underline;
+  color: #187498;
+}
 
 
 .core-title {
@@ -358,8 +475,7 @@
 .vision-mission {
   padding: 60px 0;
   background-color: #f8f9fa;
-
-  background-image: url('./images/bg-1.gif'); /* <-- GIF here */
+  background-image: url('./images/bg-1.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -496,7 +612,7 @@
 }
 
 .section-content {
-  font-family: 'Sniglet', cursive;
+  font-family: Poppins;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
@@ -617,6 +733,17 @@
   box-sizing: border-box;
 }
 
+.section-description {
+  max-width: 700px;
+  margin: 1rem auto 3rem auto;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .card {
   flex: 1 1 calc(20% - 2rem); /* 5 cards per row */
   max-width: calc(20% - 2rem);
@@ -730,7 +857,7 @@
   font-size: 1.2rem; /* ~19px */
   text-align: center;
   color: #187498;
-  font-family: 'Balsamiq', cursive;
+  font-family: 'Poppins', cursive;
   font-weight: 800;
   flex-shrink: 0;
 }
@@ -763,6 +890,9 @@
 }
 
 @media (max-width: 768px) {
+  #offers {
+    font-size: 2.5rem !important;
+  }
   .card {
     flex: 1 1 calc(50% - 2rem); /* 2 per row */
     max-width: calc(50% - 2rem);
@@ -842,11 +972,11 @@
   color: #F5EEDD;
   font-weight: 600;
   font-size: 30px;
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .left-panel p {
-  font-family: Sniglet;
+  font-family: Poppins;
   color: #F5EEDD !important;
   font-size: 15px;
 }
@@ -860,11 +990,11 @@
   color: #F5EEDD;
   font-weight: 600;
   font-size: 30px;
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .right-panel p {
-  font-family: Sniglet;
+  font-family: Poppins;
   color: #F5EEDD !important;
   font-size: 15px;
 }
@@ -878,7 +1008,7 @@
 
 /* Responsive button */
 .contact-btn {
-  font-family: Balsamiq;
+  font-family: Poppins;
   background-color: #36C2CE;
   text-decoration: none;
   border: none;
@@ -952,7 +1082,7 @@
 
 .section-description {
   font-size: 1.1rem;
-  font-family: Balsamiq;
+  font-family: Poppins;
   color: #000000;
   margin-bottom: 40px;
 }
@@ -975,6 +1105,9 @@
 @media (max-width: 600px) {
   .staff-grid {
     grid-template-columns: 1fr;
+  }
+  .ection-title-one {
+    font-size: 2.5rem !important;
   }
 }
 
@@ -1007,20 +1140,26 @@
 }
 
 .staff-member-name {
-  font-family: Sniglet;
+  font-family: Poppins;
   font-size: 1.2rem;
   color: #F97A00;
   margin-bottom: 5px;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 .staff-member-title {
-  font-family: Balsamiq;
+  font-family: Poppins;
   font-size: 0.9rem;
   color: #000000;
-  font-weight: 400;
+  font-weight: 600;
 }
 
+.staff-member-description {
+  font-family: Poppins;
+  font-size: 0.9rem;
+  color: #000000;
+}
 
 
 /***********************************************************************************/
@@ -1036,7 +1175,7 @@
   position: relative;
   z-index: 1;
   color: white; /* Adjust text color for contrast */
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Poppins', cursive;
 }
 
 .careers-section::before {
@@ -1066,13 +1205,14 @@
 }
 
 .section-subtitle {
-  font-family: 'Balsamiq Sans', cursive;
-  font-size: 1.2rem;
+  font-family: 'Poppins';
+  font-size: 17px;
   color: #000000;
   line-height: 1.6;
   text-align: center;
   max-width: 700px;
   margin: 0 auto 2rem;
+  text-align: center;
 }
 
 .section-subtitle a {
@@ -1106,6 +1246,9 @@
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 20px;
+  }
+  .careers-header h2 {
+    font-size: 2.5rem !important;
   }
 }
 
@@ -1145,7 +1288,7 @@
 }
 
 .careers-card-text {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Poppins Sans', cursive;
   font-size: 1.1rem;
   color: #000000;
   line-height: 1.6;
@@ -1153,7 +1296,7 @@
 }
 
 .help-btn {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Poppins Sans', cursive;
   font-weight: 700;
   padding: 10px 25px;
   border-radius: 50px;
@@ -1169,7 +1312,7 @@
   list-style-type: disc;
   padding-left: 1.5rem;
   text-align: left;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Poppins;
   font-size: 1.1rem;
   color: #000000; /* Ensure good readability for SEO */
   line-height: 1.6;
@@ -1326,7 +1469,7 @@
 .branch-info h3 {
   margin-bottom: 0.25rem;
   font-size: 1.1rem;
-  font-family: Baslamiq;
+  font-family: Poppins;
   font-weight: bold;
   text-align: center;
   color: #000000;
@@ -1361,6 +1504,12 @@
 }
 
 /* Responsive breakpoints */
+
+@media (max-width: 480px) {
+  .branches-section h1 {
+    font-size: 2.5rem !important;
+  }
+}
 
 /* Medium devices (tablets) */
 @media (min-width: 600px) {
@@ -1397,6 +1546,38 @@
 }
 
 
+/***********************************************************************************/
+/*Divider Styling*/
+
+.section-divider {
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0; /* spacing above and below */
+}
+
+.section-divider img {
+  max-width: 200px;       /* max width on large screens */
+  width: 50%;             /* scale down on smaller screens */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .section-divider img {
+    max-width: 150px;
+    width: 60%;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .section-divider img {
+    max-width: 120px;
+    width: 70%;
+  }
+}
+
 
 /***********************************************************************************/
 /*Awards Styling*/
@@ -1432,6 +1613,15 @@
   gap: 1rem;
   box-sizing: border-box;
   text-align: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.recognition-item:hover,
+.recognition-item:focus {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
 .recognition-item img {
@@ -1445,10 +1635,9 @@
 
 .recognition-text h3 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.25rem;
-  color: #000000;
-  font-family: Sniglet;
   font-size: 2rem;
+  color: #000000;
+  font-family: Sniglet, cursive;
 }
 
 .recognition-text p {
@@ -1456,14 +1645,17 @@
   font-size: 1rem;
   line-height: 1.4;
   color: #222222;
-  font-family: Balsamiq;
-  font-size: 1rem;
+  font-family: Poppins, sans-serif;
 }
 
 /* Small devices: phones */
 @media (max-width: 575px) {
   .recognition-list {
     flex-direction: column;
+  }
+  
+  .recognition-section h2 {
+    font-size: 2.5rem !important;
   }
 
   .recognition-item {
@@ -1491,6 +1683,10 @@
 @media (min-width: 576px) and (max-width: 991px) {
   .recognition-list {
     gap: 1.2rem;
+  }
+
+  .recognition-section h2 {
+    font-size: 2.5rem !important;
   }
 
   .recognition-item {
@@ -1562,7 +1758,7 @@
 }
 
 .footer1 {
-  font-family: Balsamiq;
+  font-family: Poppins;
   color: #A4907C !important; 
   margin: 0;
   font-size: 5px;
@@ -1595,7 +1791,7 @@
 
 .footer .section a,
 .footer .section p {
-  font-family: Balsamiq;
+  font-family: Poppins;
   color: #000000; 
   margin: 0;
   font-size: 14px;
