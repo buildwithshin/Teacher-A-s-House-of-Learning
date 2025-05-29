@@ -45,18 +45,18 @@
 }
 
 .navbar .nav-link {
-  color: #EB5353 !important;
+  color: #16610E !important;
   transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-  color: #187498 !important;
+  color: #626F47 !important;
 }
 
 .navbar .btn {
   font-weight: 600;
   letter-spacing: 0.5px;
-  background-color: #F9D923;
+  background-color: #DDEB9D;
   border: none;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .popup-content {
-  background: #FEF3E2;
+  background: #E7EFC7;
   margin: 10% auto;
   padding: 20px 30px;
   border-radius: 8px;
@@ -85,7 +85,7 @@
 
 .popup-content h4 {
   font-family: 'Sniglet';
-  color: #187498;
+  color: #16610E;
   font-weight: 600;
   margin-bottom: 15px;
   text-align: center;
@@ -128,7 +128,7 @@
 
 #place {
   font-family: Sniglet;
-  color: #187498;
+  color: #16610E;
   font-weight: 600;
 }
 
@@ -139,7 +139,7 @@
 
 .landing-page {
   height: 100vh;
-  background-image: url('./images/landing/about-1.png');
+  background-image: url('./images/bg-2.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -175,9 +175,9 @@
 }
 
 .content button {
-  border: 1.5px solid #eb6a05;
+  border: 1.5px solid #16610E;
   background: transparent;
-  color: #EB5353;
+  color: #16610E;
   padding: 0.8rem 2rem;
   border-radius: 25px;
   cursor: pointer;
@@ -188,8 +188,8 @@
 }
 
 .content button:hover {
-  background-color: #F9D923;
-  color: #EB5353;
+  background-color: #DDEB9D;
+  color: #16610E;
 }
 
 /* Responsive Breakpoints */
@@ -259,7 +259,7 @@
   margin-bottom: 20px;
   font-weight: 700;
   font-family: Sniglet, cursive;
-  color: #F9D923;
+  color: #16610E;
   text-align: center;
 }
 
@@ -391,7 +391,7 @@
   font-family: 'Sniglet', cursive;
   font-weight: 600;
   margin-bottom: 50px;
-  color: #187498;
+  color: #16610E;
 }
 
 .profiles {
@@ -425,7 +425,7 @@
 }
 
 .profile-card h2 {
-  color: #EB5353;
+  color: #16610E;
   margin-bottom: 20px;
   font-size: 1.8rem;
   font-family: 'Poppins';
@@ -460,8 +460,7 @@
 /*Mission Vision, and Core values Styling*/
 
 .teacher {
-  text-decoration: underline;
-  color: #187498;
+  color: #16610E !important;
 }
 
 
@@ -469,7 +468,7 @@
   font-family: 'Sniglet', cursive !important;
   font-weight: 800;
   font-size: 3rem;
-  color: #F9D923;
+  color: #16610E;
 }
 
 .vision-mission {
@@ -594,11 +593,10 @@
 
 .section-title {
   font-family: 'Sniglet', cursive !important;
-  font-weight: 600
+  font-weight: 600;
   font-size: 1rem;
   margin: 0;
   position: relative;
-  color: #EB5353;
 }
 
 .section-title::after {
@@ -856,7 +854,7 @@
   margin: 0;
   font-size: 1.2rem; /* ~19px */
   text-align: center;
-  color: #187498;
+  color: #16610E;
   font-family: 'Poppins', cursive;
   font-weight: 800;
   flex-shrink: 0;
@@ -871,8 +869,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Sniglet', cursive;
-  font-weight: 200;
+  font-family: 'Poppins';
+  font-weight: 400;
 }
 
 /* Responsive breakpoints */
@@ -964,12 +962,12 @@
 }
 
 .left-panel {
-  background-color: #36C2CE;
+  background-color: #A0C878;
 }
 
 .left-panel h2 {
   font-family: Sniglet;
-  color: #F5EEDD;
+  color: #16610E;
   font-weight: 600;
   font-size: 30px;
   justify-content: center !important;
@@ -977,17 +975,17 @@
 
 .left-panel p {
   font-family: Poppins;
-  color: #F5EEDD !important;
+  color: #000000 !important;
   font-size: 15px;
 }
 
 .right-panel {
-  background-color: #478CCF;
+  background-color: #DDEB9D;
 }
 
 .right-panel h2 {
   font-family: Sniglet;
-  color: #F5EEDD;
+  color: #16610E;
   font-weight: 600;
   font-size: 30px;
   justify-content: center !important;
@@ -995,7 +993,7 @@
 
 .right-panel p {
   font-family: Poppins;
-  color: #F5EEDD !important;
+  color: #000000 !important;
   font-size: 15px;
 }
 
@@ -1009,10 +1007,10 @@
 /* Responsive button */
 .contact-btn {
   font-family: Poppins;
-  background-color: #36C2CE;
+  background-color: #A0C878;
   text-decoration: none;
   border: none;
-  color: white;
+  color: #16610E;
   padding: 15px 2rem;
   font-size: 1rem;
   font-weight: bold;
@@ -1029,7 +1027,7 @@
   transform: scale(1.03); /* Only pop effect */
   outline: none;
   box-shadow: none;       /* Remove highlight */
-  background-color: #478CCF; /* Keep original color */
+  background-color: #DDEB9D; /* Keep original color */
 }
 
 /* Responsive for smaller devices */
@@ -1142,7 +1140,7 @@
 .staff-member-name {
   font-family: Poppins;
   font-size: 1.2rem;
-  color: #F97A00;
+  color: #16610E;
   margin-bottom: 5px;
   font-weight: 500;
   text-decoration: underline;
@@ -1200,7 +1198,7 @@
   font-family: 'Sniglet', cursive !important;
   font-weight: 800 !important;
   font-size: 3rem !important;
-  color: #EB5353 !important;
+  color: #16610E !important;
   margin-bottom: 1rem;
 }
 
@@ -1259,7 +1257,7 @@
   height: 100%;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-top: 5px solid #e74c3c;
+  border-top: 5px solid #A0C878;
   text-align: center;
   position: relative;
   z-index: 3; /* Keep cards above overlay */
@@ -1272,11 +1270,11 @@
 }
 
 .donate-card {
-  border-top-color: #e74c3c; /* Red accent */
+  border-top-color: #A0C878; /* Red accent */
 }
 
 .careers-qualify-card {
-  border-top-color: #2ecc71; /* Green accent */
+  border-top-color: #DDEB9D; /* Green accent */
 }
 
 .careers-card-title {
@@ -1394,7 +1392,8 @@
 
 /* Branches Location Styling */
 
-/* General Section Styles */
+/* Branches Location Styling */
+
 .branches-section {
   max-width: 900px;
   margin: 2rem auto;
@@ -1404,7 +1403,7 @@
 .branches-section h1 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #187498!important;
+  color: #16610E !important;
 }
 
 /* Branch container */
@@ -1417,14 +1416,15 @@
 
 /* Branch title button */
 .branch-title {
-  font-family: Sniglet;
+  font-family: Poppins;
+  font-weight: 400;
   display: block;
   width: 100%;
   padding: 1rem 1.25rem;
-  background-color: #F9D923;
-  color: white;
+  background-color: #A0C878;
+  color: #18230F;
   font-size: 1.25rem;
-  text-align: left;
+  text-align: center;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -1432,14 +1432,14 @@
 
 .branch-title:hover,
 .branch-title:focus {
-  background-color: #EB5353;
+  background-color: #DDEB9D;
   outline: none;
 }
 
 /* Dropdown content */
 .branch-content {
   padding: 1rem 1.25rem;
-  background-color: #f9f9f9;
+  background-color: #DDEB9D;
   display: none;
   animation: fadeIn 0.3s ease forwards;
   flex-direction: column;
@@ -1472,14 +1472,14 @@
   font-family: Poppins;
   font-weight: bold;
   text-align: center;
-  color: #000000;
+  color: #16610E;
 }
 
 .branch-info p {
   margin-top: 0;
   font-size: 1rem;
   line-height: 1.4;
-  font-family: Sniglet;
+  font-family: Poppins;
   text-align: center;
   color: #222222;
 }
@@ -1503,15 +1503,15 @@
   to { opacity: 1; }
 }
 
-/* Responsive breakpoints */
 
+/* Small devices */
 @media (max-width: 480px) {
   .branches-section h1 {
     font-size: 2.5rem !important;
   }
 }
 
-/* Medium devices (tablets) */
+/* Medium devices */
 @media (min-width: 600px) {
   .branch-title {
     font-size: 1.4rem;
@@ -1526,7 +1526,7 @@
   }
 }
 
-/* Large devices (desktop) */
+/* Large devices */
 @media (min-width: 900px) {
   .branches-section {
     padding: 0;
@@ -1545,6 +1545,66 @@
   }
 }
 
+/* Button Styling (Facebook) */
+.fb-button-container {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.fb-link-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #16610E; 
+  border: none;
+  border-bottom: 2px solid #16610E; 
+  border-radius: 0;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  min-width: 220px;
+}
+
+.fb-link-button:hover,
+.fb-link-button:focus {
+  background-color: #DDEB9D; 
+  color: #18230F; 
+  outline: none;
+  text-decoration: none;
+}
+
+
+/* Small devices */
+@media (max-width: 480px) {
+  .fb-link-button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    min-width: 180px;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 600px) {
+  .fb-link-button {
+    font-size: 1.15rem;
+    padding: 0.6rem 1.1rem;
+    min-width: 220px;
+  }
+}
+
+/* Large devices */
+@media (min-width: 900px) {
+  .fb-link-button {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.2rem;
+    min-width: 250px;
+  }
+}
+
 
 /***********************************************************************************/
 /*Divider Styling*/
@@ -1552,17 +1612,17 @@
 .section-divider {
   width: 100%;
   text-align: center;
-  margin: 3rem 0; /* spacing above and below */
+  margin: 3rem 0; 
 }
 
 .section-divider img {
-  max-width: 200px;       /* max width on large screens */
-  width: 50%;             /* scale down on smaller screens */
+  max-width: 200px;       
+  width: 50%;            
   height: auto;
   object-fit: contain;
 }
 
-/* Medium devices (tablets) */
+/* Medium devices */
 @media (max-width: 768px) {
   .section-divider img {
     max-width: 150px;
@@ -1570,7 +1630,7 @@
   }
 }
 
-/* Small devices (phones) */
+/* Small devices */
 @media (max-width: 480px) {
   .section-divider img {
     max-width: 120px;
@@ -1636,8 +1696,8 @@
 .recognition-text h3 {
   margin: 0 0 0.5rem 0;
   font-size: 2rem;
-  color: #000000;
-  font-family: Sniglet, cursive;
+  color: #16610E;
+  font-family: Poppins;
 }
 
 .recognition-text p {
@@ -1648,7 +1708,7 @@
   font-family: Poppins, sans-serif;
 }
 
-/* Small devices: phones */
+/* Small devices */
 @media (max-width: 575px) {
   .recognition-list {
     flex-direction: column;
@@ -1679,7 +1739,7 @@
   }
 }
 
-/* Medium devices: tablets and small desktops */
+/* Medium devices */
 @media (min-width: 576px) and (max-width: 991px) {
   .recognition-list {
     gap: 1.2rem;
@@ -1707,7 +1767,7 @@
   }
 }
 
-/* Large devices: desktops and larger */
+/* Large devices */
 @media (min-width: 992px) {
   .recognition-list {
     flex-direction: row;
@@ -1720,7 +1780,7 @@
   }
 }
 
-/* Extra large devices: wide desktops */
+/* Extra LArge devices */
 @media (min-width: 1200px) {
   .recognition-section {
     max-width: 1100px;
@@ -1740,8 +1800,6 @@
   }
 }
 
-
-
 /***********************************************************************************/
 
 /*Footer Styling*/
@@ -1754,7 +1812,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  flex-wrap: wrap; /* allow wrapping on small screens */
+  flex-wrap: wrap;
 }
 
 .footer1 {
@@ -1763,6 +1821,11 @@
   margin: 0;
   font-size: 5px;
   color: #000;
+  text-decoration: none;
+}
+
+.footer1 a {
+  color: #A4907C !important; 
   text-decoration: none;
 }
 
@@ -1778,12 +1841,12 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  flex: 1 1 180px; /* minimum width, adjust as needed */
+  flex: 1 1 180px; 
 }
 
 .footer .section h3 {
   font-family: Sniglet;
-  color: #187498; 
+  color: #16610E; 
   margin: 0 0 8px 0;
   font-weight: bold;
   font-size: 16px;
@@ -1812,7 +1875,7 @@
   min-width: 70px;
 }
 
-/* Responsive for smaller screens */
+/* Small devices */
 @media (max-width: 600px) {
   .footer {
     padding: 20px 20px;
@@ -1843,14 +1906,12 @@
 /***********************************************************************************/
 /* JS Styling */
 
-/* Initial state before animation */
 .animate-hidden {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Final state when in viewport */
 .animate-visible {
   opacity: 1;
   transform: translateY(0);
@@ -1864,7 +1925,8 @@
   font-family: 'Sniglet', cursive;
   font-weight: 800;
   font-size: 3rem;
-  color: #F9D923;
+  color: #16610E;
   margin-bottom: 1rem;
 }
+
 
