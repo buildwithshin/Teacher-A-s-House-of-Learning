@@ -557,6 +557,9 @@
 /* Responsive for mobile & tablets */
 /* Show mobile content instead of flip card on smaller screens */
 @media (max-width: 991px) {
+  .core-title {
+    font-size: 2rem;
+  }
   .flip-card {
     height: auto;
     perspective: none;
@@ -722,8 +725,6 @@
 /***********************************************************************************/
 /*Services Styling*/
 
-/*Services Styling*/
-
 .services-highlight {
   padding: 2rem 1rem;
   background-color: #fdf6f0;
@@ -821,12 +822,51 @@
   }
 }
 
-
 @media (min-width: 1024px) {
   .image-box {
     max-width: 400px;
   }
 }
+
+@media (max-width: 767px) {
+  .content-box h2 {
+    font-size: 2.5rem!important;
+  }
+  .services-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-box {
+    text-align: center;
+  }
+
+  .image-box {
+    max-width: 100%;
+  }
+
+  .intro-text,
+  .service-list li,
+  .cta ul li {
+    font-size: 1rem;
+    text-align: center;        /* 👈 Center each list item text */
+    margin-left: 0;            /* Remove any left padding/indent */
+    list-style-position: inside; /* 👈 Ensures bullets align properly */
+  }
+
+  .service-list,
+  .cta ul {
+    padding-left: 0;           /* Remove indentation */
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
 
 /***********************************************************************************/
 
