@@ -70,11 +70,11 @@ document.querySelectorAll('.branch-title').forEach(button => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// [SECTION] For Contact Form Popup
 document.addEventListener("DOMContentLoaded", () => {
   const popup = document.getElementById("contactPopup");
-  
-  // Existing button (if any)
+
+
+  // [SECTION] CONTACT US POPUP NAVBAR
   const openBtn = document.getElementById("openPopupBtn");
   if (openBtn) {
     openBtn.addEventListener("click", () => {
@@ -82,14 +82,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // New button for Contact Us to Learn More
-  const openContactBtn = document.getElementById("openContactPopup");
-  if (openContactBtn) {
-    openContactBtn.addEventListener("click", () => {
+  // [SECTION] ENROLL NOW POPUP
+  const openEnrollBtn = document.getElementById("openEnrollPopup");
+  if (openEnrollBtn) {
+    openEnrollBtn.addEventListener("click", () => {
       popup.style.display = "block";
     });
   }
 
+  // [SECTION] LEARN MORE POPUP
+  const openLearnMoreBtn = document.getElementById("openLearnMorePopup");
+  if (openLearnMoreBtn) {
+    openLearnMoreBtn.addEventListener("click", () => {
+      popup.style.display = "block";
+    });
+  }
+
+  // [SECTION] CLOSE BUTTON FOR POPUP
   const closeBtn = document.getElementById("closePopupBtn");
   if (closeBtn) {
     closeBtn.addEventListener("click", () => {
@@ -97,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // [SECTION] FOR CLICKING OUTSIDE THE POPUP TO CLOSE IT
   window.addEventListener("click", (e) => {
     if (e.target === popup) {
       popup.style.display = "none";
