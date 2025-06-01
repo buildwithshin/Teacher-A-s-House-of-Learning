@@ -722,205 +722,113 @@
 /***********************************************************************************/
 /*Services Styling*/
 
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem 2rem; /* vertical and horizontal spacing */
-  justify-content: center;
-  padding: 2rem 1rem; /* horizontal padding for edges */
-  box-sizing: border-box;
+/* === Section Wrapper === */
+.services-highlight {
+  padding: 2rem 1rem;
+  background-color: #fdf6f0;
 }
 
-.section-description {
-  max-width: 700px;
-  margin: 1rem auto 3rem auto;
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-}
-
-
-.card {
-  flex: 1 1 calc(20% - 2rem); /* 5 cards per row */
-  max-width: calc(20% - 2rem);
-  perspective: 1000px;
-  cursor: pointer;
-  min-width: 220px; /* prevent cards from shrinking too small */
-  box-sizing: border-box;
-  outline: none; /* remove focus outline but keep accessibility */
-}
-
-.card:focus-visible {
-  outline: 2px solid #187498; /* visible focus for keyboard users */
-  outline-offset: 3px;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  padding-top: 140%; /* aspect ratio */
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .card-inner,
-.card:focus-within .card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Tap to flip on touch devices */
-@media (hover: none) and (pointer: coarse) {
-  .card-inner {
-    cursor: pointer;
-  }
-  .card-inner:active {
-    transform: rotateY(180deg);
-  }
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* === Responsive Flex Layout === */
+.services-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Background colors per card - front side */
-.card-1 .card-front {
-  background-color: #f0f8ff; /* AliceBlue */
+/* === Image Styling and Hover Effect === */
+.image-box {
+  max-width: 450px; /* reduced size */
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-2 .card-front {
-  background-color: #fff0f5; /* LavenderBlush */
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.card-3 .card-front {
-  background-color: #f5fff0; /* Honeydew */
+.image-box:hover img {
+  transform: scale(1.05);
 }
 
-.card-4 .card-front {
-  background-color: #fffaf0; /* FloralWhite */
+/* === Content Styling === */
+.content-box {
+  max-width: 700px;
+  text-align: left;
 }
 
-.card-5 .card-front {
-  background-color: #f0f5ff; /* Light Periwinkle */
+.intro-text {
+  font-size: 1.05rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-family: Poppins;
 }
 
-/* Background colors per card - back side */
-.card-1 .card-back {
-  background-color: #dbefff;
+.service-list {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.card-2 .card-back {
-  background-color: #ffdaf0;
+.service-list li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+  font-family: Poppins;
+  color: #000000;
 }
 
-.card-3 .card-back {
-  background-color: #dfffd8;
-}
-
-.card-4 .card-back {
-  background-color: #fff0c1;
-}
-
-.card-5 .card-back {
-  background-color: #c1d4ff;
-}
-
-.card-front img {
-  flex-grow: 4; /* bigger image */
-  max-height: 80%; /* taller image */
-  max-width: 95%; /* wider image */
-  width: auto;
-  object-fit: contain;
-  border-radius: 10px 10px 0 0;
-  margin-bottom: 0.75rem;
-}
-
-.card-front h5 {
-  margin: 0;
-  font-size: 1.2rem; /* ~19px */
-  text-align: center;
+/* === Call to Action Section === */
+.cta h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
   color: #16610E;
-  font-family: 'Poppins', cursive;
-  font-weight: 800;
-  flex-shrink: 0;
+  margin-bottom: 0.75rem;
+  font-family: Poppins;
+  font-weight: 600;
 }
 
-.card-back {
-  transform: rotateY(180deg);
-  font-size: 1rem; /* 16px */
-  color: #000;
-  text-align: center;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Poppins';
-  font-weight: 400;
+.cta ul {
+  padding-left: 1.2rem;
 }
 
-/* Responsive breakpoints */
-@media (max-width: 1200px) {
-  .card {
-    flex: 1 1 calc(33.333% - 2rem); /* 3 per row */
-    max-width: calc(33.333% - 2rem);
-  }
-  .card-front h5 {
-    font-size: 1.1rem;
-  }
-  .card-back {
-    font-size: 0.95rem;
-  }
+.cta ul li {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+  font-family: Poppins;
+  color: #000000;
 }
 
-@media (max-width: 768px) {
-  #offers {
-    font-size: 2.5rem !important;
+
+/* === Tablet and Up === */
+@media (min-width: 768px) {
+  .services-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
   }
-  .card {
-    flex: 1 1 calc(50% - 2rem); /* 2 per row */
-    max-width: calc(50% - 2rem);
-  }
-  .card-front h5 {
-    font-size: 1.05rem; 
-  }
-  .card-back {
-    font-size: 0.9rem;
+
+  .content-box {
+    text-align: left;
   }
 }
 
-@media (max-width: 480px) {
-  .card {
-    flex: 1 1 100%; /* 1 per row */
-    max-width: 100%;
-  }
-  .card-front h5 {
-    font-size: 1.25rem; /* bigger on mobile */
-  }
-  .card-back {
-    font-size: 1.1rem;
-    padding: 1.5rem;
-  }
-  .section-title {
-    font-size: 2.5rem !important; /* ~40px */
-    padding: 0 1rem;
+/* === Optional: Reduce Image Size on Large Desktops === */
+@media (min-width: 1024px) {
+  .image-box {
+    max-width: 400px;
   }
 }
-
 
 
 
