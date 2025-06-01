@@ -70,6 +70,7 @@ document.querySelectorAll('.branch-title').forEach(button => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const popup = document.getElementById("contactPopup");
 
