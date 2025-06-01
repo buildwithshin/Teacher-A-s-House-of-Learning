@@ -722,13 +722,12 @@
 /***********************************************************************************/
 /*Services Styling*/
 
-/* === Section Wrapper === */
 .services-highlight {
   padding: 2rem 1rem;
   background-color: #fdf6f0;
 }
 
-/* === Responsive Flex Layout === */
+
 .services-wrapper {
   display: flex;
   flex-direction: column;
@@ -738,9 +737,9 @@
   margin: 0 auto;
 }
 
-/* === Image Styling and Hover Effect === */
+
 .image-box {
-  max-width: 450px; /* reduced size */
+  max-width: 450px; 
   width: 100%;
   overflow: hidden;
   border-radius: 16px;
@@ -759,7 +758,6 @@
   transform: scale(1.05);
 }
 
-/* === Content Styling === */
 .content-box {
   max-width: 700px;
   text-align: left;
@@ -786,7 +784,6 @@
   color: #000000;
 }
 
-/* === Call to Action Section === */
 .cta h3 {
   margin-top: 1.5rem;
   font-size: 1.2rem;
@@ -809,7 +806,6 @@
 }
 
 
-/* === Tablet and Up === */
 @media (min-width: 768px) {
   .services-wrapper {
     flex-direction: row;
@@ -823,7 +819,7 @@
   }
 }
 
-/* === Optional: Reduce Image Size on Large Desktops === */
+
 @media (min-width: 1024px) {
   .image-box {
     max-width: 400px;
