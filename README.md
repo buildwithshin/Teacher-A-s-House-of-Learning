@@ -1,84 +1,86 @@
 # Teacher A’s House of Learning Website
 
-A fully responsive, multi-section landing page for **Teacher A’s House of Learning**—an inclusive education center offering tutoring, play-based learning, professional training, and franchise opportunities. This site features a vibrant layout, animations, and accessibility-friendly features powered by HTML, CSS, and Bootstrap 5.
+Welcome to the official website of **Teacher A’s House of Learning** — an inclusive education center offering tutoring, play-based learning, professional training, and franchise opportunities. This fully responsive website showcases our programs, values, and contact information through a vibrant, accessible, and mobile-friendly design.
 
-## 🔗 Live Preview
+---
 
-> Coming soon — deploy via GitHub Pages, Vercel, or Netlify for public access. (Currently under development)
+## 🔗 Live Website
+
+🌐 [Visit the Live Site](https://www.teacherashouseoflearning.com/)  
+> Deployed via GitHub Pages from the `main` branch.
 
 ---
 
 ## 🧩 Project Structure
 
-├── index.html # Main HTML page
+
+
+├── index.html # Main landing page
 ├── index.css # Custom styles
-├── index.js # Optional JS (add interactivity here)
-├── images/ # All static image assets
-│ ├── logo-b.png
-│ ├── ceo.png
-│ ├── card-1.png
-│ └── ...etc
+├── index.js # JS for buttons, modals, and accordion
+├── /images # All image assets
 └── README.md # Project overview
 
 
 ---
 
-## 📸 Features
+## 📸 Key Features
 
-- ✅ Fully responsive across all device sizes
-- 🎨 Custom animated cards and flip effects
-- 🌐 Google Fonts for unique typography (`Sniglet`, `Balsamiq Sans`)
-- 🎥 Background images and GIF sections
-- 👩‍🏫 Team profile cards with image hover animation
-- 🎓 Mission, Vision, and Core Values flip cards
-- 🏅 Awards & Recognition gallery
-- 📋 Careers section with email CTA
-- 📞 Contact section with embedded Google Form
-- 🚀 Clean and scalable HTML5/CSS3 structure
+- ✅ Mobile-first, fully responsive layout
+- 📷 Image hover highlights and visual effects
+- 🧩 Accordion for program details
+- 📞 Contact modal popup with quick access to info
+- 🎯 Clear call-to-action buttons throughout
+- 🌈 Friendly and accessible color palette
+- 🔗 Deployed using GitHub Pages
 
 ---
 
-## 🛠️ Technologies Used
+## 💡 Technologies Used
 
-| Tech         | Description                            |
-|--------------|----------------------------------------|
-| HTML5        | Markup structure                       |
-| CSS3         | Styling with animations and responsiveness |
-| Bootstrap 5  | Grid system and responsive navbar      |
-| Google Fonts | Typography customization               |
+| Tech         | Purpose                                             |
+|--------------|-----------------------------------------------------|
+| HTML5        | Semantic page structure                             |
+| CSS3         | Styling, layout, and responsive design              |
+| JavaScript   | Button interactivity, modal, and accordion features |
+| Google Fonts | Custom typography (Poppins, Sniglet)                |
+| GitHub Pages | Hosting and deployment                              |
+| Domain       | Purchased domain at GoDaddy                         |
 
 ---
 
-## 📱 Responsiveness
+## 📱 Device Optimization
 
-This project has been optimized for:
+The site is designed and tested for:
 
 - 📱 Mobile phones
-- 💻 Desktop monitors
-- 📺 Large screens
-- 📐 Tablet devices
+- 💻 Laptops and desktops
+- 📐 Tablets and medium screens
 
-Tested using Chrome DevTools and responsive breakpoints with media queries and `flex/grid` layouts.
+Layouts adjust using media queries and flexbox for the best experience across all screen sizes.
 
 ---
 
 ## 📝 Setup Instructions
 
-1. Clone or download the repository
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/buildwithshin/Teacher-A-s-House-of-Learning.git
 2. Ensure the following structure is maintained:
    - All images go inside `./images/`
    - CSS must be linked as `./index.css`
-   - JS file linked as `./index.js` (currently optional)
+   - JS file linked as `./index.js`
 3. Open `index.html` in any browser
 
 ---
 
 ## ✨ Customization
 
-- **Branding**: Replace logo in `/images/logo-b.png`
-- **Content**: Update the text within `<section>` and `.card-back` elements
-- **Google Form**: Replace the `href` in the contact section with your own form ID
-- **Colors & Fonts**: Edit CSS to match your desired branding
+🔁 Logo: Replace /images/logo-b.png
+🎨 Colors & Fonts: Adjust in index.css
+✏️ Text Content: Update in relevant sections in index.html
+📩 Contact Modal: Edit modal content and links
+🔧 Accordion: Add or modify items in your JS and HTML
 
 ---
 
@@ -86,16 +88,16 @@ Tested using Chrome DevTools and responsive breakpoints with media queries and `
 
 For questions or collaboration opportunities:
 
-- Email: [teacherashouseoflearning@gmail.com](mailto:teacherashouseoflearning@gmail.com)
-- Phone: +63966 782 0090
+Email: teacherashouseoflearning@gmail.com
+Phone: +63966 782 0090 / +63926 520 7328
+Facebook Main Office: Teacher A’s House of Learning - Main
+Franchise Page: Teacher A’s House of Learning - Philippines
 
 ---
 
 ## 🧾 License & Usage
 
-This website is currently under development and not yet published on a live domain. A custom domain will be purchased and linked upon final deployment.
+This website and its content are the intellectual property of Teacher A’s House of Learning.
+All rights reserved © 2025.
 
-All content, images, and branding elements are owned by **Teacher A’s House of Learning**. This project is intended for private use and presentation only until officially launched.
-
-© 2025 Teacher A’s House of Learning. All rights reserved.
-
+Deployment and updates managed via GitHub. For educational and internal use unless otherwise approved.
